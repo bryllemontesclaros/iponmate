@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IponMate — Dividends / Stocks</title>
+    <meta
+      name="description"
+      content="Dividends overview. Dividend yield can change and stock prices can go up or down; profits are not guaranteed."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="IponMate" />
+    <meta property="og:title" content="IponMate — Dividends / Stocks" />
+    <meta
+      property="og:description"
+      content="Dividend yield snapshots for PH REITs with notes and estimator. Dividends and prices can change."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="IponMate — Dividends / Stocks" />
+    <meta
+      name="twitter:description"
+      content="Dividend yield snapshots for PH REITs with notes and estimator. Dividends and prices can change."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="shell header">
+      <div class="header__title">
+        <h1>IponMate</h1>
+        <p class="muted">Dividends are not guaranteed; price risk matters.</p>
+      </div>
+      <nav class="nav" aria-label="Sections">
+        <a class="nav__link" href="./index.html">Deposits</a>
+        <a class="nav__link" href="./gov.html">Pag-IBIG</a>
+        <a class="nav__link" href="./funds.html">Funds</a>
+        <a class="nav__link" href="./bonds.html">Bonds</a>
+        <a class="nav__link nav__link--active" href="./dividends.html" aria-current="page">Dividends</a>
+        <a class="nav__link" href="./metals.html">Metals</a>
+      </nav>
+      <div class="header__actions">
+        <button class="btn btn--primary" type="button" data-open-calc="interest">Estimator</button>
+        <a class="btn" href="./legal.html">Legal</a>
+      </div>
+    </header>
+
+    <div class="shell notice" role="note" aria-label="Disclaimer">
+      <p class="muted tiny">
+        <strong>Disclaimer:</strong> Information only, not financial advice. Dividends aren’t guaranteed and prices can move up/down.
+        <a class="link" href="./legal.html">Legal</a>
+      </p>
+    </div>
+
+    <main class="shell main">
+      <aside class="adSlot adSlot--top" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Top banner (recommended)</div>
+      </aside>
+
+      <div class="layout">
+        <section class="card">
+          <div class="card__head">
+            <h2>Dividends / Stocks / REITs</h2>
+            <span class="badge badge--meta">Not guaranteed</span>
+          </div>
+
+          <p class="muted">
+            Dividend yield is usually computed from past dividends and current price. Both can change. Treat this as
+            “information”, not guaranteed profit.
+          </p>
+          <p class="muted tiny">
+            Note: yields shown here are third-party snapshots. Always verify using company disclosures and your broker’s
+            pricing before making decisions.
+          </p>
+
+          <div class="tableWrap" role="region" aria-label="Dividend fields">
+            <table class="table table--cards">
+              <thead>
+                <tr>
+                  <th>Ticker</th>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th class="num">Dividend yield</th>
+                  <th class="action" aria-label="Calculator"></th>
+                  <th>Frequency</th>
+                  <th>Notes</th>
+                  <th>Updated</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Ticker"><strong>AREIT</strong></td>
+                  <td data-label="Name">AREIT, Inc.</td>
+                  <td data-label="Type">REIT</td>
+                  <td data-label="Dividend yield" class="num"><strong>6.22%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="6.22"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="AREIT dividend yield (1Y estimate)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Dividends and prices can change; profit is not guaranteed."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Frequency">Quarterly (typical)</td>
+                  <td data-label="Notes" class="muted tiny">Dividend yield is based on recent dividends + price and can change.</td>
+                  <td data-label="Updated">2026-04-15</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://stockanalysis.com/quote/pse/AREIT/dividend/" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Ticker"><strong>MREIT</strong></td>
+                  <td data-label="Name">MREIT, Inc.</td>
+                  <td data-label="Type">REIT</td>
+                  <td data-label="Dividend yield" class="num"><strong>7.25%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="7.25"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="MREIT dividend yield (1Y estimate)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Dividends and prices can change."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Frequency">Quarterly (typical)</td>
+                  <td data-label="Notes" class="muted tiny">Not guaranteed; price can move up/down.</td>
+                  <td data-label="Updated">2026-04-15</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://stockanalysis.com/quote/pse/MREIT/dividend/" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Ticker"><strong>RCR</strong></td>
+                  <td data-label="Name">RL Commercial REIT, Inc.</td>
+                  <td data-label="Type">REIT</td>
+                  <td data-label="Dividend yield" class="num"><strong>6.43%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="6.43"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="RCR dividend yield (1Y estimate)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Dividend yield is a snapshot and can change."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Frequency">Quarterly (typical)</td>
+                  <td data-label="Notes" class="muted tiny">Check disclosures for dividend policy and payout schedule.</td>
+                  <td data-label="Updated">2026-04-15</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://stockanalysis.com/quote/pse/RCR/dividend/" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Ticker"><strong>CREIT</strong></td>
+                  <td data-label="Name">Citicore Energy REIT Corp.</td>
+                  <td data-label="Type">REIT</td>
+                  <td data-label="Dividend yield" class="num"><strong>5.72%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="5.72"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="CREIT dividend yield (1Y estimate)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Not guaranteed."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Frequency">Quarterly (typical)</td>
+                  <td data-label="Notes" class="muted tiny">Future dividends can change; always verify.</td>
+                  <td data-label="Updated">2026-04-15</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://stockanalysis.com/quote/pse/CREIT/dividend/" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Ticker"><strong>VREIT</strong></td>
+                  <td data-label="Name">VistaREIT</td>
+                  <td data-label="Type">REIT</td>
+                  <td data-label="Dividend yield" class="num"><strong>12.80%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="12.80"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="VREIT dividend yield (1Y estimate)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). High yields can reflect higher risk."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Frequency">Quarterly (typical)</td>
+                  <td data-label="Notes" class="muted tiny">High yields can reflect higher risk; check details.</td>
+                  <td data-label="Updated">2026-04-15</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://stockanalysis.com/quote/pse/VREIT/dividend/" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Ticker"><strong>PREIT</strong></td>
+                  <td data-label="Name">Premiere Island Power REIT Corp.</td>
+                  <td data-label="Type">REIT</td>
+                  <td data-label="Dividend yield" class="num"><strong>12.71%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="12.71"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="PREIT dividend yield (1Y estimate)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Always verify latest disclosures and price."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Frequency">Quarterly (typical)</td>
+                  <td data-label="Notes" class="muted tiny">Always verify latest disclosures and market price.</td>
+                  <td data-label="Updated">2026-04-15</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://stockanalysis.com/quote/pse/PREIT/dividend/" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <aside class="adSlot adSlot--side" aria-label="Advertisement placeholder">
+          <div class="adSlot__label">Ad</div>
+          <div class="adSlot__box">Sidebar</div>
+        </aside>
+      </div>
+
+      <aside class="adSlot adSlot--bottom" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Bottom banner</div>
+      </aside>
+    </main>
+
+    <footer class="shell footer">
+      <div class="footer__left">
+        <span class="tiny muted">IponMate is for information only (not financial advice) and is not affiliated with any bank or financial institution.</span>
+      </div>
+      <div class="footer__right">
+        <a class="link tiny" href="./legal.html">Legal</a>
+      </div>
+    </footer>
+
+    <script src="./calc.js"></script>
+  </body>
+</html>

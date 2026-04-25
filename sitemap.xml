@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!--
+    Update BASE_URL to your deployed site URL (example: https://username.github.io/ph-savings-interest).
+    Search engines generally expect absolute URLs in <loc>.
+  -->
+  <url><loc>BASE_URL/index.html</loc></url>
+  <url><loc>BASE_URL/gov.html</loc></url>
+  <url><loc>BASE_URL/funds.html</loc></url>
+  <url><loc>BASE_URL/bonds.html</loc></url>
+  <url><loc>BASE_URL/dividends.html</loc></url>
+  <url><loc>BASE_URL/metals.html</loc></url>
+  <url><loc>BASE_URL/legal.html</loc></url>
+</urlset>
+

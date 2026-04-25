@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IponMate — Funds / UITF / Mutual Funds</title>
+    <meta
+      name="description"
+      content="Funds / UITF / mutual funds overview with historical performance fields and an expected return range calculator."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="IponMate" />
+    <meta property="og:title" content="IponMate — Funds / UITF / Mutual Funds" />
+    <meta
+      property="og:description"
+      content="Funds/UITF overview with performance snapshots, fees, risk, and a return range estimator. Not guaranteed."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="IponMate — Funds / UITF / Mutual Funds" />
+    <meta
+      name="twitter:description"
+      content="Funds/UITF overview with performance snapshots, fees, risk, and a return range estimator. Not guaranteed."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="shell header">
+      <div class="header__title">
+        <h1>IponMate</h1>
+        <p class="muted">For funds: use ranges and risk, not “profit guaranteed”.</p>
+      </div>
+      <nav class="nav" aria-label="Sections">
+        <a class="nav__link" href="./index.html">Deposits</a>
+        <a class="nav__link" href="./gov.html">Pag-IBIG</a>
+        <a class="nav__link nav__link--active" href="./funds.html" aria-current="page">Funds</a>
+        <a class="nav__link" href="./bonds.html">Bonds</a>
+        <a class="nav__link" href="./dividends.html">Dividends</a>
+        <a class="nav__link" href="./metals.html">Metals</a>
+      </nav>
+      <div class="header__actions">
+        <button class="btn btn--primary" type="button" data-open-calc="interest">Estimator</button>
+        <a class="btn" href="./legal.html">Legal</a>
+      </div>
+    </header>
+
+    <div class="shell notice" role="note" aria-label="Disclaimer">
+      <p class="muted tiny">
+        <strong>Disclaimer:</strong> Information only, not financial advice. Funds can go down; past performance isn’t a guarantee.
+        <a class="link" href="./legal.html">Legal</a>
+      </p>
+    </div>
+
+    <main class="shell main">
+      <aside class="adSlot adSlot--top" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Top banner (recommended)</div>
+      </aside>
+
+      <div class="layout">
+        <section class="card">
+          <div class="card__head">
+            <h2>Funds / UITF / Mutual Funds</h2>
+            <span class="badge badge--meta">Not guaranteed</span>
+          </div>
+
+          <p class="muted">
+            Show historical performance (1Y/3Y/5Y annualized), fees, and risk. Past performance does not guarantee future
+            results.
+          </p>
+
+          <div class="tableWrap" role="region" aria-label="Funds performance and fees">
+            <table class="table table--cards">
+              <thead>
+                <tr>
+                  <th>Provider</th>
+                  <th>Fund / UITF</th>
+                  <th>Category</th>
+                  <th class="num">Risk</th>
+                  <th class="num">Fees (%)</th>
+                  <th class="num">1Y</th>
+                  <th class="num">3Y (ann.)</th>
+                  <th class="num">5Y (ann.)</th>
+                  <th class="action" aria-label="Calculator"></th>
+                  <th>Updated</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Provider">BPI Wealth</td>
+                  <td data-label="Fund / UITF"><strong>BPI Money Market Fund</strong></td>
+                  <td data-label="Category">Money market</td>
+                  <td data-label="Risk" class="num">2/7</td>
+                  <td data-label="Fees (%)" class="num">0.50%</td>
+                  <td data-label="1Y" class="num"><strong>3.82%</strong></td>
+                  <td data-label="3Y (ann.)" class="num">4.37%</td>
+                  <td data-label="5Y (ann.)" class="num">3.33%</td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="3.82"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="annually"
+                      data-tax="0"
+                      data-label="BPI Money Market Fund (1Y return snapshot)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Fund returns are not guaranteed; values here are historical snapshots."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-14</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.bpi.com.ph/group/bpiwealth/analyst-insights/investment-funds-monitor" target="_blank" rel="noreferrer">returns</a>
+                    <span class="muted tiny"> · </span>
+                    <a class="link" href="https://www.bpi.com.ph/content/bpi/ph/en/group/bpiwealth/our-solutions/personal/investment-solutions/funds/money-market-fund" target="_blank" rel="noreferrer">fees</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Provider">BPI Wealth</td>
+                  <td data-label="Fund / UITF"><strong>BPI Short Term Fund</strong></td>
+                  <td data-label="Category">Money market</td>
+                  <td data-label="Risk" class="num">2/7</td>
+                  <td data-label="Fees (%)" class="num">0.50%</td>
+                  <td data-label="1Y" class="num"><strong>3.80%</strong></td>
+                  <td data-label="3Y (ann.)" class="num">4.25%</td>
+                  <td data-label="5Y (ann.)" class="num">3.07%</td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="3.80"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="annually"
+                      data-tax="0"
+                      data-label="BPI Short Term Fund (1Y return snapshot)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Fund returns are not guaranteed."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-14</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.bpi.com.ph/group/bpiwealth/analyst-insights/investment-funds-monitor" target="_blank" rel="noreferrer">returns</a>
+                    <span class="muted tiny"> · </span>
+                    <a class="link" href="https://www.bpi.com.ph/group/bpiwealth/our-solutions/personal/investment-solutions/funds/short-term-invest-fund" target="_blank" rel="noreferrer">fees</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Provider">BPI Wealth</td>
+                  <td data-label="Fund / UITF"><strong>BPI Philippine Equity Index Fund</strong></td>
+                  <td data-label="Category">Equity</td>
+                  <td data-label="Risk" class="num">5/7</td>
+                  <td data-label="Fees (%)" class="num">1.50%</td>
+                  <td data-label="1Y" class="num"><strong>-0.27%</strong></td>
+                  <td data-label="3Y (ann.)" class="num">-0.86%</td>
+                  <td data-label="5Y (ann.)" class="num">-0.12%</td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="-0.27"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="annually"
+                      data-tax="0"
+                      data-label="BPI PH Equity Index Fund (1Y return snapshot)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Funds can go down; this is a past return snapshot."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-14</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.bpi.com.ph/group/bpiwealth/analyst-insights/investment-funds-monitor" target="_blank" rel="noreferrer">returns</a>
+                    <span class="muted tiny"> · </span>
+                    <a class="link" href="https://www.bpi.com.ph/wealth/assetandwealth/investment-solutions/funds/philippine-equity-index-fund" target="_blank" rel="noreferrer">fees</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Provider">BPI Wealth</td>
+                  <td data-label="Fund / UITF"><strong>BPI Philippine High Dividend Equity Fund</strong></td>
+                  <td data-label="Category">Equity</td>
+                  <td data-label="Risk" class="num">5/7</td>
+                  <td data-label="Fees (%)" class="num">1.75%</td>
+                  <td data-label="1Y" class="num"><strong>7.32%</strong></td>
+                  <td data-label="3Y (ann.)" class="num">8.36%</td>
+                  <td data-label="5Y (ann.)" class="num">6.17%</td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="7.32"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="annually"
+                      data-tax="0"
+                      data-label="BPI High Dividend Equity Fund (1Y return snapshot)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Past returns aren’t guaranteed."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-14</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.bpi.com.ph/group/bpiwealth/analyst-insights/investment-funds-monitor" target="_blank" rel="noreferrer">returns</a>
+                    <span class="muted tiny"> · </span>
+                    <a class="link" href="https://www.bpi.com.ph/group/bpiwealth/our-solutions/personal/investment-solutions/funds/philippine-high-dividend-equity-fund" target="_blank" rel="noreferrer">fees</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card__head card__head--spaced">
+            <h2>Expected Return Range Calculator</h2>
+            <span class="badge badge--meta">Range</span>
+          </div>
+
+          <form id="rangeForm" class="grid" autocomplete="off">
+            <label class="field">
+              <span>Starting amount (PHP)</span>
+              <input id="rangePrincipal" class="input" inputmode="decimal" placeholder="e.g. 50000" />
+            </label>
+
+            <label class="field">
+              <span>Time (years)</span>
+              <input id="rangeYears" class="input" inputmode="decimal" placeholder="e.g. 5" />
+            </label>
+
+            <label class="field">
+              <span>Expected return (min % p.a.)</span>
+              <input id="rangeMin" class="input" inputmode="decimal" placeholder="e.g. 2" />
+            </label>
+
+            <label class="field">
+              <span>Expected return (max % p.a.)</span>
+              <input id="rangeMax" class="input" inputmode="decimal" placeholder="e.g. 8" />
+            </label>
+
+            <label class="field">
+              <span>Annual fees (optional % p.a.)</span>
+              <input id="rangeFees" class="input" inputmode="decimal" placeholder="e.g. 1" />
+            </label>
+
+            <div class="actions">
+              <button class="btn btn--primary" type="submit">Estimate range</button>
+              <button class="btn" type="button" id="rangeReset">Reset</button>
+            </div>
+          </form>
+
+          <div class="results" id="rangeResults" aria-live="polite"></div>
+
+          <p class="muted tiny">
+            This is an educational estimator. Funds can go down. Use “range” thinking (best/base/worst) instead of a
+            fixed deposit rate.
+          </p>
+          <p class="muted tiny">
+            Note: some providers publish returns as annualized, while others publish absolute returns over a period.
+            If you only have an absolute return, you can annualize it using:
+            annualized = (1 + absoluteReturn)^(1/years) − 1.
+          </p>
+          <p class="muted tiny">
+            Taxes and fees vary by product and provider. Always check the official fund fact sheet/prospectus.
+          </p>
+        </section>
+
+        <aside class="adSlot adSlot--side" aria-label="Advertisement placeholder">
+          <div class="adSlot__label">Ad</div>
+          <div class="adSlot__box">Sidebar</div>
+        </aside>
+      </div>
+
+      <aside class="adSlot adSlot--bottom" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Bottom banner</div>
+      </aside>
+    </main>
+
+    <footer class="shell footer">
+      <div class="footer__left">
+        <span class="tiny muted">IponMate is for information only (not financial advice) and is not affiliated with any bank or financial institution.</span>
+      </div>
+      <div class="footer__right">
+        <a class="link tiny" href="./legal.html">Legal</a>
+      </div>
+    </footer>
+
+    <script src="./calc.js"></script>
+    <script src="./funds.js"></script>
+  </body>
+</html>

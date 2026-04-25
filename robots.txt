@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# If you know your final domain, update the sitemap URLs inside sitemap.xml.
+Sitemap: /sitemap.xml
+

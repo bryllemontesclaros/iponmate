@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IponMate — Pag-IBIG / Government Savings</title>
+    <meta
+      name="description"
+      content="Pag-IBIG and government savings/investment programs summary. Past dividends are historical and not guaranteed."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="IponMate" />
+    <meta property="og:title" content="IponMate — Pag-IBIG / Government Savings" />
+    <meta
+      property="og:description"
+      content="Pag-IBIG MP2 and Regular Savings dividend rates (historical) with notes and estimator. Verify terms with official sources."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="IponMate — Pag-IBIG / Government Savings" />
+    <meta
+      name="twitter:description"
+      content="Pag-IBIG MP2 and Regular Savings dividend rates (historical) with notes and estimator. Verify terms with official sources."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="shell header">
+      <div class="header__title">
+        <h1>IponMate</h1>
+        <p class="muted">PH-focused money info hub. Past performance is not a guarantee.</p>
+      </div>
+      <nav class="nav" aria-label="Sections">
+        <a class="nav__link" href="./index.html">Deposits</a>
+        <a class="nav__link nav__link--active" href="./gov.html" aria-current="page">Pag-IBIG</a>
+        <a class="nav__link" href="./funds.html">Funds</a>
+        <a class="nav__link" href="./bonds.html">Bonds</a>
+        <a class="nav__link" href="./dividends.html">Dividends</a>
+        <a class="nav__link" href="./metals.html">Metals</a>
+      </nav>
+      <div class="header__actions">
+        <button class="btn btn--primary" type="button" data-open-calc="interest">Estimator</button>
+        <a class="btn" href="./legal.html">Legal</a>
+      </div>
+    </header>
+
+    <div class="shell notice" role="note" aria-label="Disclaimer">
+      <p class="muted tiny">
+        <strong>Disclaimer:</strong> Information only, not financial advice. Terms/rules can change—verify with official sources.
+        <a class="link" href="./legal.html">Legal</a>
+      </p>
+    </div>
+
+    <main class="shell main">
+      <aside class="adSlot adSlot--top" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Top banner (recommended)</div>
+      </aside>
+
+      <div class="layout">
+        <section class="card">
+          <div class="card__head">
+            <h2>Pag-IBIG / Government</h2>
+            <span class="badge badge--meta">PH programs</span>
+          </div>
+
+          <p class="muted">
+            Returns here are typically reported as dividends/declared rates and can change year to year. This page is an
+            info hub (not advice).
+          </p>
+
+          <div class="tableWrap" role="region" aria-label="Pag-IBIG and government programs">
+            <table class="table table--cards">
+              <thead>
+                <tr>
+                  <th>Program</th>
+                  <th>How it earns</th>
+                  <th class="num">Historical (1Y/3Y/5Y)</th>
+                  <th class="action" aria-label="Calculator"></th>
+                  <th>Liquidity</th>
+                  <th>Fees / Notes</th>
+                  <th>Updated</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Program"><strong>Pag-IBIG MP2</strong></td>
+                  <td data-label="How it earns">Dividends declared (not guaranteed)</td>
+                  <td data-label="Historical (1Y/3Y/5Y)" class="num">1Y: 7.12% · 3Y avg: 7.09% · 5Y avg: 6.86%</td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="7.12"
+                      data-time="5"
+                      data-unit="years"
+                      data-comp="annually"
+                      data-tax="0"
+                      data-label="Pag-IBIG MP2 (example)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Pag-IBIG dividends are declared and not guaranteed; rules/terms apply."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Liquidity">5-year term; early withdrawal rules apply</td>
+                  <td data-label="Fees / Notes" class="muted tiny">
+                    Dividend rate changes yearly. “Avg” above is the simple average of declared annual dividend rates.
+                  </td>
+                  <td data-label="Updated">2026-02-27</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.pna.gov.ph/articles/1270003" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Program"><strong>Pag-IBIG Regular Savings</strong></td>
+                  <td data-label="How it earns">Dividends declared (not guaranteed)</td>
+                  <td data-label="Historical (1Y/3Y/5Y)" class="num">1Y: 6.62% · 3Y avg: 6.59% · 5Y avg: 6.36%</td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="6.62"
+                      data-time="12"
+                      data-unit="months"
+                      data-comp="annually"
+                      data-tax="0"
+                      data-label="Pag-IBIG Regular Savings (example)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Dividends are declared and not guaranteed; program rules apply."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Liquidity">Program rules apply (membership savings)</td>
+                  <td data-label="Fees / Notes" class="muted tiny">
+                    Dividend rate changes yearly. “Avg” above is the simple average of declared annual dividend rates.
+                  </td>
+                  <td data-label="Updated">2026-02-27</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.pna.gov.ph/articles/1270003" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="muted tiny">
+            Dividend rates used for the averages above (declared by year): 2025 (MP2 7.12%, Regular 6.62%), 2024 (MP2
+            7.10%, Regular 6.60%), 2023 (MP2 7.05%, Regular 6.55%), 2022 (MP2 7.03%, Regular 6.53%), 2021 (MP2 6.00%,
+            Regular 5.50%). Always verify the latest rules/terms before investing.
+          </p>
+          <p class="muted tiny">
+            Note: sources here include public news/government portals. If anything conflicts, treat Pag-IBIG’s official
+            announcements and program terms as the source of truth.
+          </p>
+          <p class="muted tiny">
+            Sources by year: 2025 <a class="link" href="https://www.pna.gov.ph/articles/1270003" target="_blank" rel="noreferrer">PNA</a>,
+            2024 <a class="link" href="https://www.bworldonline.com/spotlight/2025/02/27/656005/pag-ibig-fund-announces-record-%E2%82%B155-65-b-dividend-in-2024-regular-savings-earn-6-6-mp2-yields-7-1/" target="_blank" rel="noreferrer">BusinessWorld</a>,
+            2023 <a class="link" href="https://www.pna.gov.ph/articles/1219691" target="_blank" rel="noreferrer">PNA</a>,
+            2022 <a class="link" href="https://mirror.pia.gov.ph/news/2023/03/28/pag-ibig-fund-posted-best-performing-year-in-2022" target="_blank" rel="noreferrer">PIA</a>,
+            2021 <a class="link" href="https://mirror.pia.gov.ph/press-releases/2022/03/14/pag-ibig-declares-record-high-p3179b-as-2021-dividends-regular-savings-at-55-mp2-at-6" target="_blank" rel="noreferrer">PIA</a>.
+          </p>
+        </section>
+
+        <aside class="adSlot adSlot--side" aria-label="Advertisement placeholder">
+          <div class="adSlot__label">Ad</div>
+          <div class="adSlot__box">Sidebar</div>
+        </aside>
+      </div>
+
+      <aside class="adSlot adSlot--bottom" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Bottom banner</div>
+      </aside>
+    </main>
+
+    <footer class="shell footer">
+      <div class="footer__left">
+        <span class="tiny muted">IponMate is for information only (not financial advice) and is not affiliated with any bank or financial institution.</span>
+      </div>
+      <div class="footer__right">
+        <a class="link tiny" href="./legal.html">Legal</a>
+      </div>
+    </footer>
+
+    <script src="./calc.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IponMate — Metals (Gold / Silver)</title>
+    <meta
+      name="description"
+      content="Gold and silver overview. Metals do not compound like deposits; spreads/fees matter."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="IponMate" />
+    <meta property="og:title" content="IponMate — Metals (Gold / Silver)" />
+    <meta
+      property="og:description"
+      content="Gold and silver spot price snapshots with a buy/sell spread estimator. Prices and fees vary by dealer."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="IponMate — Metals (Gold / Silver)" />
+    <meta
+      name="twitter:description"
+      content="Gold and silver spot price snapshots with a buy/sell spread estimator. Prices and fees vary by dealer."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="shell header">
+      <div class="header__title">
+        <h1>IponMate</h1>
+        <p class="muted">Metals: price + spread/fees (not compounding interest).</p>
+      </div>
+      <nav class="nav" aria-label="Sections">
+        <a class="nav__link" href="./index.html">Deposits</a>
+        <a class="nav__link" href="./gov.html">Pag-IBIG</a>
+        <a class="nav__link" href="./funds.html">Funds</a>
+        <a class="nav__link" href="./bonds.html">Bonds</a>
+        <a class="nav__link" href="./dividends.html">Dividends</a>
+        <a class="nav__link nav__link--active" href="./metals.html" aria-current="page">Metals</a>
+      </nav>
+      <div class="header__actions">
+        <button class="btn btn--primary" type="button" data-open-calc="price">Estimator</button>
+        <a class="btn" href="./legal.html">Legal</a>
+      </div>
+    </header>
+
+    <div class="shell notice" role="note" aria-label="Disclaimer">
+      <p class="muted tiny">
+        <strong>Disclaimer:</strong> Information only, not financial advice. Metals are price-based; spreads/fees matter.
+        <a class="link" href="./legal.html">Legal</a>
+      </p>
+    </div>
+
+    <main class="shell main">
+      <aside class="adSlot adSlot--top" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Top banner (recommended)</div>
+      </aside>
+
+      <div class="layout">
+        <section class="card">
+          <div class="card__head">
+            <h2>Gold / Silver</h2>
+            <span class="badge badge--meta">Price-based</span>
+          </div>
+
+          <p class="muted">
+            Metals don’t pay deposit interest. Your outcome depends on buy/sell prices, spreads, storage, and fees.
+          </p>
+          <p class="muted tiny">
+            Note: prices here are shown in USD per ounce. If you’re tracking in PHP, FX rates and local dealer premiums
+            can materially change results.
+          </p>
+
+          <div class="tableWrap" role="region" aria-label="Gold and silver fields">
+            <table class="table table--cards">
+              <thead>
+                <tr>
+                  <th>Metal</th>
+                  <th class="num">Spot price</th>
+                  <th class="num">Buy price</th>
+                  <th class="num">Sell price</th>
+                  <th class="num">Spread / Fees</th>
+                  <th class="action" aria-label="Calculator"></th>
+                  <th>Updated</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Metal" class="muted">Gold</td>
+                  <td data-label="Spot price" class="num">$4,708.80/oz</td>
+                  <td data-label="Buy price" class="num">$4,710.80 (ask)</td>
+                  <td data-label="Sell price" class="num">$4,708.80 (bid)</td>
+                  <td data-label="Spread / Fees" class="num">$2.00 spread (example quote)</td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="price"
+                      data-currency="USD"
+                      data-qty="1"
+                      data-buy="4710.80"
+                      data-sell="4708.80"
+                      data-fees="0"
+                      data-label="Gold (per oz) — example quote"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Real dealer premiums, spreads, VAT/fees, and FX can change results."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-24</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.kitco.com/price/precious-metals?source_id=X6HN4A14" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Metal" class="muted">Silver</td>
+                  <td data-label="Spot price" class="num">$75.56/oz</td>
+                  <td data-label="Buy price" class="num">$75.81 (ask)</td>
+                  <td data-label="Sell price" class="num">$75.56 (bid)</td>
+                  <td data-label="Spread / Fees" class="num">$0.25 spread (example quote)</td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="price"
+                      data-currency="USD"
+                      data-qty="1"
+                      data-buy="75.81"
+                      data-sell="75.56"
+                      data-fees="0"
+                      data-label="Silver (per oz) — example quote"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Premiums/spreads/fees vary by dealer."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-24</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.kitco.com/price/precious-metals?source_id=X6HN4A14" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="muted tiny">
+            Note: this is a spot quote snapshot (USD). Real buy/sell prices depend on your broker/dealer, premiums, VAT/fees,
+            and payment method.
+          </p>
+        </section>
+
+        <aside class="adSlot adSlot--side" aria-label="Advertisement placeholder">
+          <div class="adSlot__label">Ad</div>
+          <div class="adSlot__box">Sidebar</div>
+        </aside>
+      </div>
+
+      <aside class="adSlot adSlot--bottom" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Bottom banner</div>
+      </aside>
+    </main>
+
+    <footer class="shell footer">
+      <div class="footer__left">
+        <span class="tiny muted">IponMate is for information only (not financial advice) and is not affiliated with any bank or financial institution.</span>
+      </div>
+      <div class="footer__right">
+        <a class="link tiny" href="./legal.html">Legal</a>
+      </div>
+    </footer>
+
+    <script src="./calc.js"></script>
+  </body>
+</html>

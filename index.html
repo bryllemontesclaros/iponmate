@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IponMate — PH Savings & Time Deposit Rates</title>
+    <meta
+      name="description"
+      content="List and compare Philippine savings and time deposit interest rates and estimate how much interest you can earn."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="IponMate" />
+    <meta property="og:title" content="IponMate — PH Savings & Time Deposit Rates" />
+    <meta
+      property="og:description"
+      content="Compare Philippine savings and time deposit interest rates and estimate earnings. Verify terms with official sources."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="IponMate — PH Savings & Time Deposit Rates" />
+    <meta
+      name="twitter:description"
+      content="Compare Philippine savings and time deposit interest rates and estimate earnings. Verify terms with official sources."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="shell header">
+      <div class="header__title">
+        <h1>IponMate</h1>
+        <p class="muted">
+          Philippine savings & time deposit rates + earnings calculator. Rates here are a local list—verify with official bank pages.
+        </p>
+      </div>
+      <nav class="nav" aria-label="Sections">
+        <a class="nav__link nav__link--active" href="./index.html" aria-current="page">Deposits</a>
+        <a class="nav__link" href="./gov.html">Pag-IBIG</a>
+        <a class="nav__link" href="./funds.html">Funds</a>
+        <a class="nav__link" href="./bonds.html">Bonds</a>
+        <a class="nav__link" href="./dividends.html">Dividends</a>
+        <a class="nav__link" href="./metals.html">Metals</a>
+      </nav>
+      <div class="header__actions">
+        <button id="openCalcBtn" class="btn btn--primary" type="button" data-open-calc="interest">Calculator</button>
+      </div>
+    </header>
+
+    <div class="shell notice" role="note" aria-label="Disclaimer">
+      <p class="muted tiny">
+        <strong>Disclaimer:</strong> Information only, not financial advice. Rates/terms can change—verify in the official bank/app pages.
+        <a class="link" href="./legal.html">Legal</a>
+      </p>
+    </div>
+
+    <main class="shell main">
+      <aside class="adSlot adSlot--top" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Top banner (recommended: 728×90 desktop / 320×100 mobile)</div>
+      </aside>
+
+      <div class="layout">
+        <section class="card">
+          <div class="card__head">
+            <div class="card__titleRow">
+              <h2>Rates</h2>
+              <span id="asOfBadge" class="badge badge--meta" aria-live="polite"></span>
+            </div>
+            <div class="rates__tools">
+              <select id="typeFilterSelect" class="select" aria-label="Filter type">
+                <option value="all">All</option>
+                <option value="savings">Savings</option>
+                <option value="time_deposit">Time deposit</option>
+              </select>
+              <input
+                id="searchInput"
+                class="input"
+                type="search"
+                placeholder="Search bank/product…"
+                autocomplete="off"
+              />
+              <select id="sortSelect" class="select" aria-label="Sort rates">
+                <option value="bank_asc">Bank (A→Z)</option>
+                <option value="bank_desc">Bank (Z→A)</option>
+                <option value="rate_desc">Rate (High→Low)</option>
+                <option value="rate_asc">Rate (Low→High)</option>
+                <option value="updated_desc">Updated (Newest)</option>
+                <option value="updated_asc">Updated (Oldest)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="tableWrap" role="region" aria-label="Philippine savings and time deposit rates">
+            <table class="table table--cards" id="ratesTable">
+              <thead>
+                <tr>
+                  <th>Bank</th>
+                  <th>Product</th>
+                  <th>Type</th>
+                  <th class="num">Rate (p.a.)</th>
+                  <th class="action" aria-label="Calculator"></th>
+                  <th class="num">Min Deposit</th>
+                  <th>Updated</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody id="ratesTbody"></tbody>
+            </table>
+          </div>
+
+          <p class="muted tiny" id="ratesMeta"></p>
+          <p class="muted tiny">
+            Tip: click <strong>Calculate</strong> to open the calculator overlay. To update the fixed list, edit <code>rates.js</code>.
+          </p>
+          <p class="muted tiny">
+            Calculator note: defaults are generic. If the product uses daily crediting, average daily balance rules, or
+            special tier mechanics, adjust settings and rely on the official terms for the final numbers.
+          </p>
+          <p class="muted tiny">
+            Notes: many rates are tiered/promo-based; deposit interest is typically subject to withholding tax; some deposit products may be covered by deposit insurance—always verify terms with the official source.
+          </p>
+        </section>
+
+        <aside class="adSlot adSlot--side" aria-label="Advertisement placeholder">
+          <div class="adSlot__label">Ad</div>
+          <div class="adSlot__box">Sidebar (recommended: 300×600)</div>
+        </aside>
+      </div>
+
+      <aside class="adSlot adSlot--bottom" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Bottom banner (recommended: responsive)</div>
+      </aside>
+    </main>
+
+    <footer class="shell footer">
+      <div class="footer__left">
+        <span class="tiny muted">IponMate is for information only (not financial advice) and is not affiliated with any bank or financial institution.</span>
+      </div>
+      <div class="footer__right">
+        <a class="link tiny" href="./legal.html">Legal</a>
+      </div>
+    </footer>
+
+    <script src="./rates.js"></script>
+    <script src="./calc.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

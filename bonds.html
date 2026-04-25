@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IponMate — Bonds / T-bills</title>
+    <meta
+      name="description"
+      content="Bonds and T-bills overview. Yields depend on price and are not the same as savings interest."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="IponMate" />
+    <meta property="og:title" content="IponMate — Bonds / T-bills" />
+    <meta
+      property="og:description"
+      content="PH Treasury bill/bond yield snapshots with notes and estimator. Yields depend on price—verify official sources."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="IponMate — Bonds / T-bills" />
+    <meta
+      name="twitter:description"
+      content="PH Treasury bill/bond yield snapshots with notes and estimator. Yields depend on price—verify official sources."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="shell header">
+      <div class="header__title">
+        <h1>IponMate</h1>
+        <p class="muted">Bonds/T-bills: yield-to-maturity (YTM) depends on price.</p>
+      </div>
+      <nav class="nav" aria-label="Sections">
+        <a class="nav__link" href="./index.html">Deposits</a>
+        <a class="nav__link" href="./gov.html">Pag-IBIG</a>
+        <a class="nav__link" href="./funds.html">Funds</a>
+        <a class="nav__link nav__link--active" href="./bonds.html" aria-current="page">Bonds</a>
+        <a class="nav__link" href="./dividends.html">Dividends</a>
+        <a class="nav__link" href="./metals.html">Metals</a>
+      </nav>
+      <div class="header__actions">
+        <button class="btn btn--primary" type="button" data-open-calc="interest">Estimator</button>
+        <a class="btn" href="./legal.html">Legal</a>
+      </div>
+    </header>
+
+    <div class="shell notice" role="note" aria-label="Disclaimer">
+      <p class="muted tiny">
+        <strong>Disclaimer:</strong> Information only, not financial advice. Bond yields depend on price; selling early can gain/lose.
+        <a class="link" href="./legal.html">Legal</a>
+      </p>
+    </div>
+
+    <main class="shell main">
+      <aside class="adSlot adSlot--top" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Top banner (recommended)</div>
+      </aside>
+
+      <div class="layout">
+        <section class="card">
+          <div class="card__head">
+            <h2>Bonds / T-bills</h2>
+            <span class="badge badge--meta">Different math</span>
+          </div>
+
+          <p class="muted">
+            Savings interest is not the same as bond yield. Bonds have price risk (you can gain/lose if sold before
+            maturity). Use “Yield-to-Maturity” (YTM) when comparing.
+          </p>
+          <p class="muted tiny">
+            Note: auction results are market snapshots and may differ from retail pricing (fees/spreads may apply). If in
+            doubt, confirm with your bank/broker or the official auction/publication.
+          </p>
+
+          <div class="tableWrap" role="region" aria-label="Bonds and T-bills fields">
+            <table class="table table--cards">
+              <thead>
+                <tr>
+                  <th>Instrument</th>
+                  <th>Issuer</th>
+                  <th class="num">Term</th>
+                  <th class="num">Coupon</th>
+                  <th class="num">Price</th>
+                  <th class="num">YTM</th>
+                  <th class="action" aria-label="Calculator"></th>
+                  <th>Updated</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Instrument"><strong>T-bill</strong> (91 days)</td>
+                  <td data-label="Issuer">Republic of the Philippines</td>
+                  <td data-label="Term" class="num">91d</td>
+                  <td data-label="Coupon" class="num">0.00%</td>
+                  <td data-label="Price" class="num">98.865</td>
+                  <td data-label="YTM" class="num"><strong>4.542%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="4.542"
+                      data-time="91"
+                      data-unit="days"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="T-bill 91d (YTM example)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Bond/T-bill yields depend on price; this is a simplified estimate."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-20</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.treasury.gov.ph/wp-content/uploads/2026/04/Treasury-Bills-Auction-Results-on-20-April-2026-.pdf" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Instrument"><strong>T-bill</strong> (182 days)</td>
+                  <td data-label="Issuer">Republic of the Philippines</td>
+                  <td data-label="Term" class="num">182d</td>
+                  <td data-label="Coupon" class="num">0.00%</td>
+                  <td data-label="Price" class="num">97.704</td>
+                  <td data-label="YTM" class="num"><strong>4.649%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="4.649"
+                      data-time="182"
+                      data-unit="days"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="T-bill 182d (YTM example)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). YTM math is simplified here for quick comparison."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-20</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.treasury.gov.ph/wp-content/uploads/2026/04/Treasury-Bills-Auction-Results-on-20-April-2026-.pdf" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Instrument"><strong>T-bill</strong> (364 days)</td>
+                  <td data-label="Issuer">Republic of the Philippines</td>
+                  <td data-label="Term" class="num">364d</td>
+                  <td data-label="Coupon" class="num">0.00%</td>
+                  <td data-label="Price" class="num">95.140</td>
+                  <td data-label="YTM" class="num"><strong>5.052%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="5.052"
+                      data-time="364"
+                      data-unit="days"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="T-bill 364d (YTM example)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Actual yields depend on purchase price and fees."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-20</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.treasury.gov.ph/wp-content/uploads/2026/04/Treasury-Bills-Auction-Results-on-20-April-2026-.pdf" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Instrument"><strong>T-bond</strong> (10Y, ~7.3Y remaining)</td>
+                  <td data-label="Issuer">Republic of the Philippines</td>
+                  <td data-label="Term" class="num">~7.3y</td>
+                  <td data-label="Coupon" class="num">6.625%</td>
+                  <td data-label="Price" class="num">99.884</td>
+                  <td data-label="YTM" class="num"><strong>6.643%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="6.643"
+                      data-time="7.3"
+                      data-unit="years"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="T-bond (~7.3y remaining) (YTM example)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). YTM is a bond metric and differs from savings interest."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-21</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.treasury.gov.ph/wp-content/uploads/2026/04/Treasury-Bonds-Auction-Result-on-21-April-2026.pdf" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Instrument"><strong>T-bond</strong> (20Y, ~5.3Y remaining)</td>
+                  <td data-label="Issuer">Republic of the Philippines</td>
+                  <td data-label="Term" class="num">~5.3y</td>
+                  <td data-label="Coupon" class="num">8.000%</td>
+                  <td data-label="Price" class="num">107.365</td>
+                  <td data-label="YTM" class="num"><strong>6.328%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="6.328"
+                      data-time="5.3"
+                      data-unit="years"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="T-bond (~5.3y remaining) (YTM example)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). This is a simplified yield estimate."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-14</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.treasury.gov.ph/wp-content/uploads/2026/04/Treasury-Bonds-Auction-Result-on-14-April-2026.pdf" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Instrument"><strong>T-bond</strong> (7Y, ~3.1Y remaining)</td>
+                  <td data-label="Issuer">Republic of the Philippines</td>
+                  <td data-label="Term" class="num">~3.1y</td>
+                  <td data-label="Coupon" class="num">6.500%</td>
+                  <td data-label="Price" class="num">100.554</td>
+                  <td data-label="YTM" class="num"><strong>6.298%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="6.298"
+                      data-time="3.1"
+                      data-unit="years"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="T-bond (~3.1y remaining) (YTM example)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Actual returns depend on price, fees, and holding period."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-07</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.treasury.gov.ph/wp-content/uploads/2026/04/Treasury-Bonds-Auction-Result-on-07-April-2026.pdf" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Instrument"><strong>T-bond</strong> (25Y, ~8.6Y remaining)</td>
+                  <td data-label="Issuer">Republic of the Philippines</td>
+                  <td data-label="Term" class="num">~8.6y</td>
+                  <td data-label="Coupon" class="num">9.250%</td>
+                  <td data-label="Price" class="num">116.088</td>
+                  <td data-label="YTM" class="num"><strong>6.747%</strong></td>
+                  <td data-label="" class="action">
+                    <button
+                      class="btn rowBtn"
+                      type="button"
+                      data-open-calc="interest"
+                      data-rate="6.747"
+                      data-time="8.6"
+                      data-unit="years"
+                      data-comp="simple"
+                      data-tax="0"
+                      data-label="T-bond (~8.6y remaining) (YTM example)"
+                      data-disclaimer="Disclaimer: estimator only (not financial advice). Bond math is simplified here for quick comparison."
+                    >
+                      Estimate
+                    </button>
+                  </td>
+                  <td data-label="Updated">2026-04-07</td>
+                  <td data-label="Source">
+                    <a class="link" href="https://www.treasury.gov.ph/wp-content/uploads/2026/04/Treasury-Bonds-Auction-Result-on-07-April-2026.pdf" target="_blank" rel="noreferrer">link</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="muted tiny">
+            Next step (optional): add a bond/YTM estimator. Keep it clearly separate from deposit “interest” to avoid
+            confusion.
+          </p>
+        </section>
+
+        <aside class="adSlot adSlot--side" aria-label="Advertisement placeholder">
+          <div class="adSlot__label">Ad</div>
+          <div class="adSlot__box">Sidebar</div>
+        </aside>
+      </div>
+
+      <aside class="adSlot adSlot--bottom" aria-label="Advertisement placeholder">
+        <div class="adSlot__label">Ad</div>
+        <div class="adSlot__box">Bottom banner</div>
+      </aside>
+    </main>
+
+    <footer class="shell footer">
+      <div class="footer__left">
+        <span class="tiny muted">IponMate is for information only (not financial advice) and is not affiliated with any bank or financial institution.</span>
+      </div>
+      <div class="footer__right">
+        <a class="link tiny" href="./legal.html">Legal</a>
+      </div>
+    </footer>
+
+    <script src="./calc.js"></script>
+  </body>
+</html>
