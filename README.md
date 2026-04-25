@@ -28,9 +28,9 @@ Then open `http://localhost:5173`.
 - Dividends: `ph-savings-interest/dividends.html`
 - Metals: `ph-savings-interest/metals.html`
 
-## Ads (placeholders)
+## Ads / Analytics (optional)
 
-Pages include clearly labeled ad placeholders (top / sidebar / bottom). If you add real ads/analytics, add a proper privacy policy and disclosures.
+If you enable ads or analytics, add a proper privacy policy and the required disclosures/consent prompts.
 
 ## SEO (basic)
 

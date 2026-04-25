@@ -422,44 +422,6 @@ body::before {
   border-radius: 999px;
 }
 
-.adSlot {
-  border-radius: var(--radius);
-  border: 1px dashed rgba(15, 23, 42, 0.18);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.22));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
-  padding: 12px;
-  position: relative;
-  overflow: hidden;
-}
-
-.adSlot__label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(15, 23, 42, 0.55);
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  border-radius: 999px;
-  padding: 2px 8px;
-}
-
-.adSlot__box {
-  min-height: 90px;
-  display: grid;
-  place-items: center;
-  color: rgba(15, 23, 42, 0.6);
-  font-size: 13px;
-  padding: 18px 10px 10px;
-  text-align: center;
-}
-
-.adSlot--side .adSlot__box {
-  min-height: 320px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -802,10 +764,6 @@ code {
 
 @media (min-width: 1400px) {
   .layout {
-    grid-template-columns: 1fr 320px;
-  }
-  .adSlot--side {
-    position: sticky;
-    top: 18px;
+    grid-template-columns: 1fr;
   }
 }
