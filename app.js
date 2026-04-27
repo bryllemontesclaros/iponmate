@@ -118,6 +118,23 @@ function escapeHtml(value) {
 }
 
 function renderRatesTable(rates) {
+  if (!rates.length) {
+    els.ratesTbody.innerHTML = `
+      <tr>
+        <td colspan="8">
+          <div class="emptyState">
+            <strong>No matching rates</strong>
+            <div class="muted tiny">Try a different keyword, or clear filters to show everything.</div>
+            <div class="actions">
+              <button class="btn btn--primary" type="button" data-clear-rates>Clear filters</button>
+            </div>
+          </div>
+        </td>
+      </tr>
+    `;
+    return;
+  }
+
   els.ratesTbody.innerHTML = rates
     .map((r) => {
       const typeBadge =
@@ -125,7 +142,7 @@ function renderRatesTable(rates) {
           ? `<span class="badge badge--td">Time deposit</span>`
           : `<span class="badge badge--sav">Savings</span>`;
       const sourceCell = r.sourceUrl
-        ? `<a class="link" href="${escapeHtml(r.sourceUrl)}" target="_blank" rel="noreferrer">link</a>`
+        ? `<a class="link" href="${escapeHtml(r.sourceUrl)}" target="_blank" rel="noreferrer noopener" title="Opens in a new tab">link</a>`
         : `<span class="muted tiny">—</span>`;
 
       const notes = r.notes ? `<div class="muted tiny">${escapeHtml(r.notes)}</div>` : "";
@@ -141,7 +158,7 @@ function renderRatesTable(rates) {
           data-tax="1"
           data-label="${escapeHtml(`${r.bank} — ${r.product}`)}"
           data-disclaimer="Disclaimer: estimator only (not financial advice). Actual credited interest depends on bank rules, tiers/promos, fees, rounding, and posting schedules."
-        >Calculate</button>
+        >Estimate</button>
       `;
 
       return `
@@ -174,10 +191,22 @@ function refresh() {
   }
 }
 
+function clearRatesFilters() {
+  if (els.searchInput) els.searchInput.value = "";
+  if (els.typeFilterSelect) els.typeFilterSelect.value = "all";
+  if (els.sortSelect) els.sortSelect.value = "bank_asc";
+  refresh();
+  els.searchInput?.focus?.();
+}
+
 // Events
 els.searchInput.addEventListener("input", refresh);
 els.sortSelect.addEventListener("change", refresh);
 els.typeFilterSelect?.addEventListener("change", refresh);
+els.ratesTbody?.addEventListener("click", (e) => {
+  const clearBtn = e.target?.closest?.("[data-clear-rates]");
+  if (clearBtn) clearRatesFilters();
+});
 
 // Init
 refresh();

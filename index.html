@@ -74,12 +74,14 @@
                 <option value="savings">Savings</option>
                 <option value="time_deposit">Time deposit</option>
               </select>
+              <label class="srOnly" for="searchInput">Search rates</label>
               <input
                 id="searchInput"
                 class="input"
                 type="search"
                 placeholder="Search bank/product…"
                 autocomplete="off"
+                aria-label="Search bank or product"
               />
               <select id="sortSelect" class="select" aria-label="Sort rates">
                 <option value="bank_asc">Bank (A→Z)</option>
@@ -112,7 +114,7 @@
 
           <p class="muted tiny" id="ratesMeta"></p>
           <p class="muted tiny">
-            Tip: click <strong>Calculate</strong> to open the calculator overlay. To update the fixed list, edit <code>rates.js</code>.
+            Tip: click <strong>Estimate</strong> to open the calculator overlay. To update the fixed list, edit <code>rates.js</code>.
           </p>
           <p class="muted tiny">
             Calculator note: defaults are generic. If the product uses daily crediting, average daily balance rules, or

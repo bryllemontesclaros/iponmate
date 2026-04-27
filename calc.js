@@ -49,27 +49,27 @@
           <button id="closeCalcBtn" class="iconBtn" aria-label="Close" type="button">✕</button>
         </div>
 
-        <div class="segmented" role="tablist" aria-label="Calculator mode">
-          <button class="segmented__btn" type="button" role="tab" aria-selected="true" data-mode="interest">Interest / Yield</button>
-          <button class="segmented__btn" type="button" role="tab" aria-selected="false" data-mode="price">Price (Buy/Sell)</button>
+        <div class="segmented" role="group" aria-label="Calculator mode">
+          <button class="segmented__btn" type="button" aria-pressed="true" data-mode="interest">Interest / Yield</button>
+          <button class="segmented__btn" type="button" aria-pressed="false" data-mode="price">Price (Buy/Sell)</button>
         </div>
 
         <div class="dialog__body">
           <form id="interestForm" class="grid" autocomplete="off" aria-label="Interest calculator">
             <label class="field">
               <span>Amount (PHP)</span>
-              <input id="principalInput" class="input" inputmode="decimal" placeholder="e.g. 10000" />
+              <input id="principalInput" class="input" type="text" inputmode="decimal" placeholder="e.g. 10000" />
             </label>
 
             <label class="field">
               <span>Annual rate (%)</span>
-              <input id="rateInput" class="input" inputmode="decimal" placeholder="e.g. 2.5" />
+              <input id="rateInput" class="input" type="text" inputmode="decimal" placeholder="e.g. 2.5" />
             </label>
 
             <label class="field">
               <span>Time</span>
               <div class="field__row">
-                <input id="timeValueInput" class="input" inputmode="decimal" placeholder="e.g. 12" />
+                <input id="timeValueInput" class="input" type="text" inputmode="decimal" placeholder="e.g. 12" />
                 <select id="timeUnitSelect" class="select" aria-label="Time unit">
                   <option value="months">Months</option>
                   <option value="years">Years</option>
@@ -103,7 +103,7 @@
           <form id="priceForm" class="grid isHidden" autocomplete="off" aria-label="Price calculator">
             <label class="field">
               <span>Quantity</span>
-              <input id="qtyInput" class="input" inputmode="decimal" placeholder="e.g. 1" />
+              <input id="qtyInput" class="input" type="text" inputmode="decimal" placeholder="e.g. 1" />
             </label>
 
             <label class="field">
@@ -116,17 +116,17 @@
 
             <label class="field">
               <span>Buy price (per unit)</span>
-              <input id="buyInput" class="input" inputmode="decimal" placeholder="e.g. 4710.80" />
+              <input id="buyInput" class="input" type="text" inputmode="decimal" placeholder="e.g. 4710.80" />
             </label>
 
             <label class="field">
               <span>Sell price (per unit)</span>
-              <input id="sellInput" class="input" inputmode="decimal" placeholder="e.g. 4708.80" />
+              <input id="sellInput" class="input" type="text" inputmode="decimal" placeholder="e.g. 4708.80" />
             </label>
 
             <label class="field">
               <span>Fees / spread (optional)</span>
-              <input id="feesInput" class="input" inputmode="decimal" placeholder="e.g. 10" />
+              <input id="feesInput" class="input" type="text" inputmode="decimal" placeholder="e.g. 10" />
             </label>
 
             <div class="actions">
@@ -155,7 +155,7 @@
 
     for (const b of buttons) {
       const isActive = b.getAttribute("data-mode") === mode;
-      b.setAttribute("aria-selected", isActive ? "true" : "false");
+      b.setAttribute("aria-pressed", isActive ? "true" : "false");
       b.classList.toggle("segmented__btn--active", isActive);
     }
 
@@ -472,4 +472,3 @@
 
   bindEvents();
 })();
-
