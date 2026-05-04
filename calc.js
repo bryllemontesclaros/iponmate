@@ -306,6 +306,8 @@
 
     setLabel(opts.label || "");
 
+    const shouldAutoFocus = !window.matchMedia?.("(pointer: coarse)")?.matches;
+
     if (mode === "price") {
       const qtyInput = document.getElementById("qtyInput");
       const buyInput = document.getElementById("buyInput");
@@ -319,7 +321,7 @@
       if (sellInput && opts.sell != null) sellInput.value = String(opts.sell);
       if (feesInput && opts.fees != null) feesInput.value = String(opts.fees);
 
-      (qtyInput || buyInput || sellInput)?.focus?.();
+      if (shouldAutoFocus) (qtyInput || buyInput || sellInput)?.focus?.();
     } else {
       const principalInput = document.getElementById("principalInput");
       const rateInput = document.getElementById("rateInput");
@@ -335,7 +337,7 @@
       if (taxCheckbox && typeof opts.applyTax === "boolean") taxCheckbox.checked = opts.applyTax;
       if (principalInput && opts.principal != null) principalInput.value = String(opts.principal);
 
-      (principalInput || timeValueInput || rateInput)?.focus?.();
+      if (shouldAutoFocus) (principalInput || timeValueInput || rateInput)?.focus?.();
     }
 
     renderMessage("Fill the form and click Calculate.");
