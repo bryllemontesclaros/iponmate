@@ -27,6 +27,7 @@ Then open `http://localhost:5173`.
 - Bonds: `ph-savings-interest/bonds.html`
 - Dividends: `ph-savings-interest/dividends.html`
 - Metals: `ph-savings-interest/metals.html`
+- Crypto: `ph-savings-interest/crypto.html`
 
 ## Ads / Analytics (optional)
 

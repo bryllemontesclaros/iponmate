@@ -169,7 +169,7 @@ function renderRatesTable(rates) {
           <td data-label="Rate (p.a.)" class="num"><strong>${escapeHtml(fmtRatePa(r.ratePa))}</strong></td>
           <td data-label="" class="action">${pickBtn}</td>
           <td data-label="Min deposit" class="num">${escapeHtml(fmtMoney(r.minDepositPhp))}</td>
-          <td data-label="Updated">${escapeHtml(r.updated || "—")}</td>
+          <td data-label="Checked">${escapeHtml(r.updated || "—")}</td>
           <td data-label="Source">${sourceCell}</td>
         </tr>
       `;
